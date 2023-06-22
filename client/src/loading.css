@@ -1,0 +1,31 @@
+.loading-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.background-image {
+  width: 800px; /* Adjust the width as desired */
+  height: 600px; /* Adjust the height as desired */
+  background-image: url("./images/loading-logo.jpg"); /* Replace with the actual image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    width: 100%; /* Adjust the width as desired */
+    height: 60%;
+    background-size: cover;
+  }
+
+}
