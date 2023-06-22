@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
 import axios from "axios";
+import videoBackground from "../videos/background-video.mp4";
 
 const Home = ({ setResult }) => {
 	const [fullName, setFullName] = useState("");
@@ -53,7 +54,10 @@ const Home = ({ setResult }) => {
 		return <Loading />;
 	}
 	return (
-		<div className='app'>
+		<div className='app home-page'>
+			<video className="background-video" autoPlay muted loop>
+				<source src={videoBackground} type="video/mp4" />
+			</video>
 			<h1>Resume Builder</h1>
 			<p>Generate a resume with ChatGPT in few seconds</p>
 			<form
