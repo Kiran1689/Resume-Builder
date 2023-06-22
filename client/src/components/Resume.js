@@ -21,7 +21,7 @@ const Resume = ({ result }) => {
 
 	return (
 		<>
-			<button onClick={handlePrint}>Print Page</button>
+			<button id="print" onClick={handlePrint}>Print Page</button>
 			<main className='container' ref={componentRef}>
 				<header className='header'>
 					<div>
